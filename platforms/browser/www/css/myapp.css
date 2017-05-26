@@ -1,0 +1,23 @@
+/* line 1, ../sass/_main.scss */
+.colorful {
+  color: #bb8833;
+}
+
+/* line 4, ../sass/_main.scss */
+.app {
+  margin: 10px;
+}
+/* line 10, ../sass/_main.scss */
+.app .board {
+  width: 100%;
+}
+/* line 12, ../sass/_main.scss */
+.app .board table {
+  width: 100%;
+}
+/* line 15, ../sass/_main.scss */
+.app .board td {
+  width: 33%;
+  height: 50px;
+  border: solid 2px black;
+}

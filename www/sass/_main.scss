@@ -1,0 +1,22 @@
+.colorful {
+  color: $clrHilight;
+}
+.app {
+  margin: 10px;
+  .topbar {
+    // border-bottom: 1px solid $clrBorders;
+  }
+
+  .board {
+    width: 100%;
+    table {
+      width: 100%;
+    }
+    td {
+      width: 33%;
+      height: 50px;
+      border: solid 2px black;
+    }
+  }
+
+}
