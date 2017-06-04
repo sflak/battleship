@@ -10,10 +10,12 @@
   .board {
     width: 100%;
     table {
-      width: 100%;
+      width: 500px;
+      height: 500px;
+      margin:0 auto 40px auto;
     }
     td {
-      width: 33%;
+      width: 12.5%;
       height: 50px;
       border: solid 2px black;
     }

@@ -13,11 +13,13 @@
 }
 /* line 12, ../sass/_main.scss */
 .app .board table {
-  width: 100%;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto 40px auto;
 }
-/* line 15, ../sass/_main.scss */
+/* line 17, ../sass/_main.scss */
 .app .board td {
-  width: 33%;
+  width: 12.5%;
   height: 50px;
   border: solid 2px black;
 }

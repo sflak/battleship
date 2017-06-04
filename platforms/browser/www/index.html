@@ -44,7 +44,7 @@
     </head>
     <body>
 
-    <div id="vue-div" class="app" style="display:none">
+    <div id="vue-div" class="app" >
 
         <div class="top_input">
             <input v-model="magic_word" placeholder="shared magic word" />
@@ -55,17 +55,26 @@
         <div class="role">
             You are: ${my_role}
         </div>
-
-        <div class="board container">
+<!--enemy board-->
+        <div class="board container center">
             <table>
-                <tr v-for="i in [0, 1, 2]">
-                    <td v-on:click="play(i,j)" v-for="j in [0, 1, 2]">
-                        ${board[i * 3 + j]}
+                <tr v-for="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+                    <td v-on:click="play(i,j)" v-for="j in [0, 1, 2, 3, 4, 5, 6, 7]">
+                        ${enemy_board[i * 8 + j]}
                     </td>
                 </tr>
             </table>
         </div>
-
+<!--player's board-->
+        <div class="board container center">
+            <table>
+                <tr v-for="i in [0, 1, 2, 3, 4, 5, 6, 7]">
+                    <td v-on:click="play(i,j)" v-for="j in [0, 1, 2, 3, 4, 5, 6, 7]">
+                        ${board[i * 8 + j]}
+                    </td>
+                </tr>
+            </table>
+        </div>
         <div v-if="is_my_turn" class="turn_indicators">
             Play ${my_role}
         </div>
